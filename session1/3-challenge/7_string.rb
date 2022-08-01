@@ -5,5 +5,13 @@
 # pirates_say_arrrrrrrrr("Pirates say arrrrrrrrr")        # => "arrrrrrrr"
 
 def pirates_say_arrrrrrrrr(string)
-
+  rrr = []
+  counter = 0
+  string.each_char { |i|
+    counter += 1
+    if i.upcase == "R"
+      rrr.push(string.chars[counter])
+    end
+  }
+  return rrr.join
 end
